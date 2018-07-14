@@ -4,14 +4,18 @@
  *  Description: wind tunnel simulation
  * Scheduler ID:
  *    Framework: P5
- *       Author:
+ *       Author: Azeem Bande-Ali, Steven Gomez, Kathryn Grunewald, and Danny Guo
  *       Status: work in progress
  */
 
 import P5Behavior from 'p5beh';
 
+import Particle from './particle';
+
 const pb = new P5Behavior();
 /* this == pb.p5 == p */
+
+const particles = new Set();
 
 // for WEBGL: pb.renderer = 'webgl';
 
